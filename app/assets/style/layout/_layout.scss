@@ -1,4 +1,16 @@
 
+nav{
+    @include lg{
+        a:hover{
+            background: transparent;
+            opacity: 50%;
+        }
+
+    }
+
+
+}
+
 .nav-wallet{
     font-size: 27px;
 }
