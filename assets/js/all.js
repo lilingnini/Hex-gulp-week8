@@ -4,7 +4,8 @@ $(function () {
   console.log('Hello Bootstrap5');
 });
 var swiper = new Swiper(".mySwiper", {
-  spaceBetween: 30,
+  // slidesPerView: 3,
+  spaceBetween: 24,
   centeredSlides: true,
   autoplay: {
     delay: 2500,
