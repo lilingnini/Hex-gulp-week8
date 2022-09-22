@@ -4,9 +4,15 @@ $(function () {
   console.log('Hello Bootstrap5');
 });
 var swiper = new Swiper(".mySwiper", {
-  // slidesPerView: 3,
-  spaceBetween: 24,
+  slidesPerView: 1,
   centeredSlides: true,
+  loop: true,
+  breakpoints: {
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 250
+    }
+  },
   autoplay: {
     delay: 2500,
     disableOnInteraction: false
@@ -19,9 +25,5 @@ var swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
   }
-}); // 確保圖片都載入後，以免造成剛進入頁面時圖片會被覆蓋
-
-$('.row').imagesLoaded().progress(function () {
-  $('.row').masonry(); // 渲染整體畫面
 });
 //# sourceMappingURL=all.js.map
